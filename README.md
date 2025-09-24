@@ -37,11 +37,11 @@ source venv/bin/activate   # En Linux / Mac
 venv\Scripts\activate      # En Windows
 
 # Instalar librerías necesarias
-pip install
 pip install pandas
 pip install numpy
 pip install matplotlib
 pip install seaborn
+pip install openpyxl
 ```
 
 ---
