@@ -61,7 +61,23 @@ pip install openpyxl
 - Clasificación en:
   - **Cualitativas**: nominales / ordinales.
   - **Cuantitativas**: discretas / continuas.
-
+    
+| Variables Relevantes| Clasificación |
+|----------|-------------|
+| **GENERO** | Cualitativa nominal |
+| **EDAD** | Cuantitativa continua |
+| **RANGO EDAD** | Cualitativa ordinal |
+| **AÑO INGRESO** | Cuantitativa discreta |
+| **SEMESTRE INGRESO** | Cualitativa ordinal |
+| **NOMBRE CARRERA** | Cualitativa nominal |
+| **MODALIDAD** | Cualitativa nominal |
+| **JORNADA** | Cualitativa nominal |
+| **NIVEL DE ESTUDIO CARRERA** | Cualitativa ordinal |
+| **NIVEL CARRERA** | Cualitativa ordinal |
+| **AREA CONOCIMIENTO** | Cualitativa nominal |
+| **DURACION PLAN DE ESTUDIO (SEM)** | Cuantitativa discreta |
+| **DURACION TOTAL CARRERA (SEM)** | Cuantitativa discreta |
+| **VALOR MATRICULA (PESOS)** | Cuantitativa continua |
 ---
 
 ## Parte II – Análisis univariado
@@ -74,6 +90,34 @@ pip install openpyxl
 - Media, mediana y moda (para variables cuantitativas).
 - Percentiles y cuartiles (Q1, Q2, Q3, P90, etc.).
 - Breve comentario interpretando qué significan estos valores en el contexto.
+
+**Se seleccionaron las siguientes variables numéricas:**
+- Edad
+- Duración total de la carrera (semestres)
+- Valor matrícula (pesos)
+- Valor arancel (pesos)
+
+**Medidas utilizadas**
+- **Media:** Promedio de los valores
+- **Mediana:** Valor central de la distribución
+- **Moda:** Valor más frecuente
+- **Cuartiles:** Segmentos del 25% (Q1, Q2, Q3)
+- **Percentiles:** Posición relativa (por ejemplo, P90)
+
+**Tabla con los valores**
+
+| Variable | Media | Mediana | Moda | Q1 | Q3 | P90 |
+|----------|-------|---------|------|----|----|-----|
+| **Edad (años)** | 24 | 23 | 22 | 20 | 28 | 32 |
+| **Duración total carrera (SEM)** | 9 | 10 | 10 | 8 | 12 | 12 |
+| **Valor matrícula (pesos)** | 365.000 | 290.000 | 469.000 | 261.000 | 469.000 | 469.000 |
+| **Valor arancel (pesos)** | 2.450.000 | 2.670.000 | 2.670.000 | 1.748.000 | 2.920.000 | 3.527.000 |
+
+**Comentario interpretativo**
+- La edad promedio de los estudiantes es de 24 años, con una mediana de 23, lo que indica una ligera concentración en edades jóvenes.
+- La duración más común de la carreras es de 10 semestres, lo que coincide con la mediana y la moda.
+- El valor de matrícula más frecuente es de $469.000, aunque la mediana es más baja, lo que sugiere que algunas carreras más económicas bajan el promedio.
+- El valor del arancel muestra una amplia dispersión, con un P90 de más de $3.500.000, lo que indica que el 10% de las carreras más costosas superan ese monto.
 
 ### 6. Representaciones gráficas
 - Histogramas (para visualizar distribución de variables numéricas).
